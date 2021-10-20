@@ -82,3 +82,27 @@ align-items: left;
     font-size: 22px;
     color: #fff;
 }
+
+.block_telka{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+}
+
+.telka{
+    position: absolute;
+    z-index: 2;
+    right: 353px;
+    top: 280px;
+}
+
+.backtelka{
+    position: absolute;
+    z-index: 1;
+    right: 203px;
+}
+
+.textTelki{
+    
+    display: block;    
+}
