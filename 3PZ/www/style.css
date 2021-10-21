@@ -41,14 +41,9 @@ align-items: left;
     border-radius: 50px;
 }
 
-.number img {
-    margin-right: 20px;
-}
-
-.number span {
+.number span{
     font-family: OpenSans;
     font-size: 22px;
-    color: #10133A;
 }
 
 .block{
@@ -85,24 +80,35 @@ align-items: left;
 
 .block_telka{
     display: flex;
-    align-items: left;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.textTelkiF{  
+    display: block;
+    align-items: center;
     justify-content: center;
-}
-
-.telka{
-    position: absolute;
-    z-index: 2;
-    right: 353px;
-    top: 280px;
-}
-
-.backtelka{
-    position: absolute;
-    z-index: 1;
-    right: 203px;
-}
-
-.textTelki{
+    font-family: OpenSans;
+    font-weight: bold;
     
-    display: block;    
+    font-size: 48px; 
+    position: relative;
+    top: 169px;
+    left: 98px;
+    color:#10133A;
+}
+
+.textTelkiS{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-family: OpenSans;
+    
+    font-weight: 400;
+    font-size: 30px; 
+}
+
+.imgTelka{
+    position: relative;
+    top: -20px;
 }
