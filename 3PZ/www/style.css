@@ -46,6 +46,10 @@ align-items: left;
     font-size: 22px;
 }
 
+.flex{
+    display: flex;
+}
+
 .block{
     display: block;
 }
@@ -57,7 +61,7 @@ align-items: left;
 }
 
 .icone_img{
-    margin: 10px;
+    margin: 12px;
 }
 
 .underHead{
@@ -102,8 +106,7 @@ align-items: left;
     display: block;
     align-items: center;
     justify-content: center;
-    font-family: OpenSans;
-    
+    font-family: OpenSans;    
     font-weight: 400;
     font-size: 30px; 
 }
@@ -111,4 +114,187 @@ align-items: left;
 .imgTelka{
     position: relative;
     top: -20px;
+}
+
+/* .sidebar {
+    padding: 0;
+    width: 440px;
+    height: 70px;
+    background-color: #f1f1f1;
+    position: relative;    
+  }
+
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+
+  .sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  } */
+
+  .SideBar{
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 200px;
+      width: 280px;
+      border: 0px;
+      background-color: burlywood;
+      padding: 10px;
+  }
+.SideBar_section{
+
+}
+
+.SideBar_Item :hover{
+    background-color: cadetblue;
+    border-radius: 4px;
+}
+
+.SideBar_Item{
+    font-family: OpenSans;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 20px;
+    font-size: 18px;
+}
+
+.hardBlock{
+    background-color: #F4F5FF;
+}
+
+.flexZhenchini{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: auto;
+    height: 550px;
+}
+
+.flexZhenchiniSec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: auto;
+    height: 700px;
+}
+
+.positionLine1{
+    position: relative;
+    top: 90px;
+    left: 103px;
+}
+
+.blockAboutCoach_1{
+    position: relative;
+    top: 90px;
+    left: 103px;
+    font-family: OpenSans;    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    color: #10133A;
+}
+
+.blockAboutCoach_2{
+    position: relative;
+    top: 90px;
+    left: 103px;
+    font-family: OpenSans;    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.blockIMGCoach_1{
+    position: relative;
+    top: 90px;
+    right: 102px;
+}
+
+.blockAboutCoach_3{
+    position: relative;
+    top: 100px;
+    right: 102px;
+    text-align: right;
+    font-family: OpenSans;    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    color: #10133A;
+}
+
+.blockAboutCoach_4{
+    position: relative;
+    top: 100px;
+    right: 102px;
+    text-align: right;
+    font-family: OpenSans;    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.positionLine2{
+    position: relative;
+    top: 100px;
+    right: 102px;
+    float:right;
+}
+
+.blockIMGCoach_2{
+    position: relative;
+    top: 34px;
+    left: 107px;
+}
+
+.blockOt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F4F5FF;
+}
+
+.blockOtzivi{    
+    flex-direction: column;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-basis: auto;
+    height: 700px;
+    position: relative;
+    top: 50px;
+    
+}
+
+.Otzivi_1{
+    font-family: OpenSans;    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    color: #10133A;
+}
+
+.Otzivi_2{
+    font-family: OpenSans;    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
 }
