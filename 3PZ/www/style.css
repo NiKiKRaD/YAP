@@ -116,51 +116,16 @@ align-items: left;
     top: -20px;
 }
 
-/* .sidebar {
-    padding: 0;
-    width: 440px;
-    height: 70px;
-    background-color: #f1f1f1;
-    position: relative;    
-  }
-
-  .sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-  }
-
-  .sidebar a.active {
-    background-color: #4CAF50;
-    color: white;
-  }
-
-  .sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-  }
-
-  div.content {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
-  } */
-
-  .SideBar{
-      position: relative;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 200px;
-      width: 280px;
-      border: 0px;
-      background-color: burlywood;
-      padding: 10px;
-  }
-.SideBar_section{
-
+.SideBar{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    width: 280px;
+    border: 0px;
+    background-color: burlywood;
+    padding: 10px;
 }
 
 .SideBar_Item :hover{
@@ -280,8 +245,6 @@ align-items: left;
     flex-basis: auto;
     height: 700px;
     position: relative;
-    top: 50px;
-    
 }
 
 .Otzivi_1{
@@ -297,4 +260,69 @@ align-items: left;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
+}
+
+.Video{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 850px;    
+}
+
+.blockRecording{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.RecordingText{
+    font-family: OpenSans;    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    color: #10133A;
+}
+
+.blockRec{
+    flex-direction: column;
+    display: flex;
+    align-items: center; 
+    height: 1062px;
+    justify-content: space-between;   
+}
+
+.flexRec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 856px;
+}
+
+.RecordFName{
+    font-family: OpenSans;    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.areaInput{
+    font-family: OpenSans;    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    width: 649px;
+    height: 85px;
+    background-color: #CDC2C0;
+    border:0px;
+    border-radius: 50px; 
+}
+
+.OptionGoal{
+    width: 649px;
+    height: 85px;
+    background-color: #CDC2C0;
+    border:0px;
+    border-radius: 50px; 
 }
