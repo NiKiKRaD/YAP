@@ -60,6 +60,10 @@ align-items: left;
     justify-content: left;
 }
 
+.icone img:hover{
+    color: brown;
+}
+
 .icone_img{
     margin: 12px;
 }
@@ -73,6 +77,10 @@ align-items: left;
     background-color: #10133A;
     font-family: OpenSans;
     font-size: 22px;
+    color: gainsboro;
+}
+
+.underHead p:hover{
     color: #fff;
 }
 
@@ -245,6 +253,7 @@ align-items: left;
     flex-basis: auto;
     height: 700px;
     position: relative;
+
 }
 
 .Otzivi_1{
@@ -396,4 +405,50 @@ input[type=radio]:checked+label::before {
     font-weight: bold;
     font-size: 24px;
     color: #FFFFFF;
+}
+
+.imgMap{
+    height: 800px;
+    width: auto;
+    position: relative;
+    top: 30px;
+    
+}
+
+.imgMarker{
+    position: relative;
+    top: -483px;
+    left: 995px;
+}
+
+.infoBarBack{
+    position: relative;
+    top: -750px;
+    left: 110px;
+    width: 385px;
+    height: 533px;
+    background-color: #F4F5FF;
+    border-radius: 10px;
+    
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoBarText{
+
+}
+
+.infoBarBack div{
+    font-family: OpenSans;    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    color: #10133A;
+}
+
+.Line{
+    width: 185px;
+    height: 3px;
+    background: linear-gradient(to right, #EF4621, #F6CF45);
 }
