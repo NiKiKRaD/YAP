@@ -606,13 +606,61 @@ input[type=radio]:checked+label::before {
     margin-top: 88px;
 }
 
-.Call p{
+.CallOrder{
     font-family: OpenSans;    
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    color: #FFFFFF;
+    font-size: 22px;
+    color: #fff;
 }
+
+.CallOrderSec{
+    font-family: OpenSans;    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    width: 284px;
+    height: 73px;
+    border-radius: 50px;
+    border: 0px;
+    background: linear-gradient(to right, #EF4621, #F6CF45);    
+}
+
+.CallOrderHead{
+    font-family: OpenSans;    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    color: #10133A;
+    text-decoration: none;
+}
+
+.b-popup{
+    flex-direction: column;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-left: 840px;
+    width:100%;
+    min-height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+.b-popup-content{
+    margin: auto;
+    margin-top: 221px;
+    width: 821px;
+    height: 582px;    
+    border: 10px;
+    background-color: #F4F5FF;  
+    box-shadow: 0,4,4,0; 
+}
+
+
 
 footer{    
     margin: auto;

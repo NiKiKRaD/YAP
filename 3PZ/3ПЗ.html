@@ -60,7 +60,7 @@
                 </p>
                 <div class="IndividBar">
                     <p class="GorizontalLine">
-                         </p>
+                    </p>
                 </div>
                 <p class="FontBar">
                     Индивидуальный график
@@ -199,7 +199,7 @@
                             //1. После загрузки страницы,  когда все элементы будут доступны выполнить...
                             $(function () {
                                 //2. Получить элемент, к которому необходимо добавить маску
-                                $("#phone").mask("+375 (99) 999-99-99", {placeholder: " "});
+                                $("#phone").mask("+375 (99) 999-99-99", { placeholder: " " });
                             });
                         </script>
                     </div>
@@ -264,28 +264,50 @@
                         </p>
                     </div>
                     <div class="Call">
-                        <p>Заказать звонок</p>
+                        <a href="javascript:PopUpShow()">
+                            <p class="CallOrder">Заказать звонок</p>
+                        </a>
+                        <div class="b-popup" id="popup1">
+                            <div class="b-popup-content">
+                                <p class="CallOrderHead">
+                                    Заказать звонок
+                                </p>
+                                <a href="javascript:PopUpHide()">
+                                    <p class="CallOrderSec">Заказать звонок</p>
+                                </a>
+                                <script>
+                                    $(document).ready(function () {
+                                        PopUpHide();
+                                    });
+                                    function PopUpShow() {
+                                        $("#popup1").show();
+                                    }
+                                    function PopUpHide() {
+                                        $("#popup1").hide();
+                                    }
+                                </script>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-    </div>
-    <footer>
-        <p>
-            О тренерах
-        </p>
-        <p>
-            Тренеровки
-        </p>
-        <img src="www/end.png" alt="no img">
-        <p>
-            Отзывы
-        </p>
-        <p>
-            Контакты
-        </p>
-    </footer>
+        </div>
+        <footer>
+            <p>
+                О тренерах
+            </p>
+            <p>
+                Тренеровки
+            </p>
+            <img src="www/end.png" alt="no img">
+            <p>
+                Отзывы
+            </p>
+            <p>
+                Контакты
+            </p>
+        </footer>
 </body>
 
 </html>
