@@ -53,32 +53,34 @@
                 <img class="imgTelka" src="www/telka.png" alt="no telka">
             </div>
         </div>
-        <div class="flex">
-            <!-- <div class="sidebar">
-                <a class="active" href="#home">Home</a>
-                <div class="content">
-                    loremfdsfdsfdsf
+        <div class="ChoiceBar">
+            <div class="blockBar">
+                <p class="firstFontBar">
+                    Учет особенностей здоровья
+                </p>
+                <div class="IndividBar">
+                    <p class="GorizontalLine">
+                         </p>
                 </div>
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
-            </div> -->
-            <div class="hardBlock">
-                <div class="SideBar">
-                    <div class="SideBar_section">
-                        <div class="SideBar_Item">
-                            <a href="#">Учёт особенностей здоровья</a>
-                        </div>
-                        <div class="SideBar_Item">
-                            <a href="#">Эффективность упражнений</a>
-                        </div>
-                        <div class="SideBar_Item">
-                            <a href="#">Индивидуальный график</a>
-                        </div>
-                        <div class="SideBar_Item">
-                            <a href="#">Персональное питание</a>
-                        </div>
-                    </div>
+                <p class="FontBar">
+                    Индивидуальный график
+                </p>
+                <p class="FontBar">
+                    Персональное питание
+                </p>
+            </div>
+            <div>
+                <p class="VerticalLine"></p>
+            </div>
+            <div class="InfoBar">
+                <div class="InfoBarImg">
+                    <img src="www/muscule.png" alt="no img">
+                </div>
+                <div class="InfoBarText">
+                    <p>
+                        Результат работы не заставит себя ждать! <br>
+                        Уже через неделю вы увидите изменения в зеркале.
+                    </p>
                 </div>
             </div>
         </div>
@@ -182,12 +184,24 @@
                         <input class="areaInput" name="lastName" type="text" />
                     </div>
                 </div>
+                <!-- Подключение библиотеки jQuery -->
+                <script src="JS/jquery-3.6.0.min.js"></script>
+                <!-- Подключение jQuery плагина Masked Input -->
+                <script src="JS/jquery.maskedinput.min.js"></script>
                 <div class="flexRec">
                     <div class="RecordFName">
                         Телефон*
                     </div>
                     <div>
-                        <input class="areaInput" name="phone" type="text" />
+                        <input class="areaInput" id="phone" name="number" type="text" />
+                        <script>
+                            //Код jQuery, установливающий маску для ввода телефона элементу input
+                            //1. После загрузки страницы,  когда все элементы будут доступны выполнить...
+                            $(function () {
+                                //2. Получить элемент, к которому необходимо добавить маску
+                                $("#phone").mask("+375 (99) 999-99-99", {placeholder: " "});
+                            });
+                        </script>
                     </div>
                 </div>
                 <div class="flexRec">
@@ -255,10 +269,23 @@
                 </div>
             </div>
         </div>
-        <div class="end">
 
-        </div>
     </div>
+    <footer>
+        <p>
+            О тренерах
+        </p>
+        <p>
+            Тренеровки
+        </p>
+        <img src="www/end.png" alt="no img">
+        <p>
+            Отзывы
+        </p>
+        <p>
+            Контакты
+        </p>
+    </footer>
 </body>
 
 </html>

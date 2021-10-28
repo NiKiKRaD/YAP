@@ -92,6 +92,102 @@ align-items: left;
     color: #fff;
 }
 
+.ChoiceBar{
+    margin: auto;
+    width: 1440px;
+    height: 596px;
+    background-color: #F4F5FF;
+    display: flex;           
+}
+
+.VerticalLine{
+    margin-top: 110px;
+    width: 3px;
+    height: 420px;
+    background: linear-gradient( #EF4621, #F6CF45);
+}
+
+.GorizontalLine{
+    width: 5px;
+    height: 69px;
+    background: linear-gradient( #EF4621, #F6CF45);
+}
+
+
+.blockBar{
+    flex-direction: column;
+    display: block;
+    align-content: center;
+    justify-content: space-around;
+    margin-left: 103px;
+}
+
+.firstFontBar{
+    font-family: OpenSans;    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #363636;
+    margin-top: 114px;
+}
+
+.FontBar{
+    font-family: OpenSans;    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #363636;
+    margin-top: 78px;
+}
+
+
+.IndividBar{
+    width: 439px;
+    height: 69px;
+    background-color: #10133A;
+    align-items: center;
+    margin-top: 78px;
+    font-family: OpenSans;    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #fff;
+}
+
+.IndividBarP{
+    font-family: OpenSans;    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #fff;
+    margin:auto;
+}
+
+.InfoBar{
+    flex-direction: column;
+    display: block;
+    margin-top: 97px;
+    
+}
+
+.InfoBar p{
+    font-family: OpenSans;    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #10133A;
+}
+
+.InfoBarImg{
+    margin-left: 246px;
+}
+
+.InfoBarText{
+    align-items: center;
+    justify-content: center;
+    margin-left: 63px;    
+}
+
 .block_telka{
     display: flex;
     align-items: flex-start;
@@ -518,9 +614,24 @@ input[type=radio]:checked+label::before {
     color: #FFFFFF;
 }
 
-.end{
+footer{    
     margin: auto;
     width: 1440px;
     height: 158px;
-    background-color: #10133A;
+    background-color: #10133A; 
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer p{
+    font-family: OpenSans;    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: gainsboro;
+}
+
+footer p:hover{
+    color: #fff;
 }
