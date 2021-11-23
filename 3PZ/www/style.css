@@ -416,6 +416,10 @@ align-items: left;
     
 }
 
+a{
+    text-decoration: none;
+}
+
 .areaInput{
     font-family: OpenSans;    
     font-style: normal;
@@ -624,8 +628,9 @@ input[type=radio]:checked+label::before {
     margin-top: 50px;
     margin-left: 260px;
 }
-.CallOrderSecText{
-    margin-left: 50px;
+.CallOrderSecText{  
+    padding: 20px;
+    margin-left: 40px;
     font-family: OpenSans;    
     font-style: normal;
     font-weight: bold;
