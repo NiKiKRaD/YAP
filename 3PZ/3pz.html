@@ -269,11 +269,34 @@
                         </a>
                         <div class="b-popup" id="popup1">
                             <div class="b-popup-content">
+                                <a href="javascript:PopUpHide()" class="krest"> <img src="www/krest.png" alt="no img"></a>
                                 <p class="CallOrderHead">
                                     Заказать звонок
                                 </p>
-                                <a href="javascript:PopUpHide()">
-                                    <p class="CallOrderSec">Заказать звонок</p>
+                                <p class="CallOrderUnderHead_1">
+                                    Бесплатная консультация.</p>
+                                <p class="CallOrderUnderHead"> Оставьте свой номер телефона, и мы перезвоним Вам.
+                                </p>
+                                <div class="phoneFlex">
+                                    <div>
+                                        <p class="PhoneText"> Телефон*</p>
+                                    </div>
+                                    <div>
+                                        <input class="phoneBar" id="Iphone" name="number" type="text" />
+                                        <script>
+                                            //Код jQuery, установливающий маску для ввода телефона элементу input
+                                            //1. После загрузки страницы,  когда все элементы будут доступны выполнить...
+                                            $(function () {
+                                                //2. Получить элемент, к которому необходимо добавить маску
+                                                $("#Iphone").mask("+375 (99) 999-99-99", { placeholder: " " });
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                                <a href="javascript:PopUpHide()">                        
+                                    <div class="CallOrderSec">
+                                        <p class="CallOrderSecText">Заказать звонок</p>
+                                    </div>
                                 </a>
                                 <script>
                                     $(document).ready(function () {
