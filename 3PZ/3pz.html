@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="www/style.css">
 </head>
 
-<body>
-    <div class="block">
+<body class="block">
+    <header>
         <div class="header">
             <img class="fitness_storie" src="www/fitnes_storie.png" alt="null">
             <div class="right-header-block">
@@ -26,9 +26,9 @@
             </div>
         </div>
         <div class="underHead">
-            <p>
+            <a href="#aboutTrener">
                 О тренерах
-            </p>
+            </a>
             <p>
                 Тренеровки
             </p>
@@ -39,6 +39,8 @@
                 Контакты
             </p>
         </div>
+    </header>
+    <main>
         <div class="block_telka">
             <div class="textTelkiF">
                 Персональные тренеровки
@@ -59,8 +61,11 @@
                     Учет особенностей здоровья
                 </p>
                 <div class="IndividBar">
-                    <p class="GorizontalLine">
+                    <p class="effect">
+                        Эффективные упражнения
                     </p>
+                    <p class="GorizontalLine"></p>  
+                                      
                 </div>
                 <p class="FontBar">
                     Индивидуальный график
@@ -87,7 +92,7 @@
         <div class="flexZhenchini">
             <div class="block">
                 <div class="blockAboutCoach_1">
-                    Наши тренера
+                    <a name ="aboutTrener">Наши тренера</a>
                 </div>
                 <div class="positionLine1">
                     <img src="www/Line.png" alt="no img">
@@ -167,13 +172,13 @@
             <div>
                 <img src="www/bigLine.png" alt="no img">
             </div>
-            <div class="blockRec">
+            <form class="blockRec">
                 <div class="flexRec">
                     <div class="RecordFName">
                         Имя*
                     </div>
                     <div>
-                        <input class="areaInput" name="firstName" type="text" />
+                        <input required class="areaInput" name="firstName" type="text" />
                     </div>
                 </div>
                 <div class="flexRec">
@@ -181,7 +186,7 @@
                         Фамилия*
                     </div>
                     <div>
-                        <input class="areaInput" name="lastName" type="text" />
+                        <input required class="areaInput" name="lastName" type="text" />
                     </div>
                 </div>
                 <!-- Подключение библиотеки jQuery -->
@@ -193,7 +198,7 @@
                         Телефон*
                     </div>
                     <div>
-                        <input class="areaInput" id="phone" name="number" type="text" />
+                        <input required class="areaInput" id="phone" name="number" type="text" />
                         <script>
                             //Код jQuery, установливающий маску для ввода телефона элементу input
                             //1. После загрузки страницы,  когда все элементы будут доступны выполнить...
@@ -229,16 +234,16 @@
                                 <label for="komsomolskaya">ул. Комсомольская 7</label>
                             </li>
                             <li>
-                                <input checked type="radio" id="yablochnaya" name="street">
+                                <input  checked type="radio" id="yablochnaya" name="street">
                                 <label for="yablochnaya">пер. Яблочный 1</label>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="Zapic">
+                <button type="submit" class="Zapic">
                     <p> Записаться</p>
-                </div>
-            </div>
+                </button>
+            </form>
         </div>
         <div class="imgMap">
 
@@ -316,6 +321,7 @@
             </div>
 
         </div>
+    </main>
         <footer>
             <p>
                 О тренерах
@@ -331,6 +337,7 @@
                 Контакты
             </p>
         </footer>
+    
 </body>
 
 </html>
