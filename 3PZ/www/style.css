@@ -107,12 +107,21 @@ align-items: left;
     background: linear-gradient( #EF4621, #F6CF45);
 }
 
-.GorizontalLine{
+.GorizontalLine{    
     width: 5px;
     height: 69px;
     background: linear-gradient( #EF4621, #F6CF45);
 }
 
+.effect{
+    position: absolute;
+    margin-left: 40px;
+    font-family: OpenSans;    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #fff;
+}
 
 .blockBar{
     flex-direction: column;
