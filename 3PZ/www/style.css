@@ -79,7 +79,7 @@ align-items: left;
     background-color: #10133A;
     font-family: OpenSans;
     font-size: 22px;
-    color: gainsboro;
+    color: rgb(97, 85, 85);
 }
 
 .underHead p:hover{
@@ -115,6 +115,7 @@ align-items: left;
 
 .effect{
     position: absolute;
+    margin-bottom: 10px;
     margin-left: 40px;
     font-family: OpenSans;    
     font-style: normal;
