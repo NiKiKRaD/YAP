@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="form">
+        <select id="products">
+            <option id="Kotleta" value="200">Котлета</option>
+            <option id="potato" value="200">Картошка</option>
+            <option id="olivie" value="300">Оливье</option>
+            <option id="tushenka" value="500">Тушенка</option>
+            <option id="ogerez" value="30">Огурец</option>
+            <option id="moloko" value="200">Молоко</option>
+            <option id="kefir" value="300">Кефир</option>
+        </select>
+        <input id="amount" type="number" value="10" placeholder="Количество продуктов">
+        <button id="add" onclick="add()">Добавить</button>
+
+        <hr>
+
+        <table id="tbl" style="text-align: center; border: 1px solid black;">
+            <thead>
+                <tr>
+                    <th>Наименование блюда</th>
+                    <th>Калорийность</th>
+                    <th>Количество</th>
+                    <th>Общая Калорийность</th>
+                </tr>
+            </thead>
+            <tbody id="rows"></tbody>
+
+        </table>
+
+        <hr>
+
+        <div>
+            <button id="cnt" onclick="count()">Расчитать результат</button>
+            <button id="clr" onclick="clearTable()">Очистить</button>
+        </div>
+        <hr>
+        <b>
+            <span>Суммарная калорийность:</span>
+            <span id="totalResult">0</span>
+        </b>
+
+        <script src="js/myScript.js"></script>
+
+</body>
+
+</html>
