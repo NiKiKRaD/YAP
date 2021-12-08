@@ -14,8 +14,7 @@ function find(name, calories, amount) {
     var table = document.getElementsByClassName(name);
     var Row = document.getElementById(name);
     if (Row != null) {
-        var count = Row.getElementsByClassName('amount');
-        var total = Row.getElementsByClassName("total");
+        var count = Row.getElementsByClassName('amount');        
         let inc = parseInt(count[0].innerText);
         if (tempAmount > 0) {
             count[0].innerText = parseInt(inc) + parseInt(amount);
@@ -66,5 +65,5 @@ function clearTable() {
     var rowCount = table.rows.length;
     while (rowCount > 0) {
         table.deleteRow(0);
-    }
+    }    
 }
