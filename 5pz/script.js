@@ -4,8 +4,11 @@ function add() {
     var name = document.getElementById("products").options[n].text;
     var calories = document.getElementById("products").options[n].value;
     var amount = document.getElementById("amount").value;
+    if(amount < 0)  {closeButton();}
+    else {openButton();}
     find(name, calories, amount,);
 }
+
 
 function find(name, calories, amount) {
     let tempCalories = parseInt(calories);
@@ -22,6 +25,7 @@ function find(name, calories, amount) {
         }
     }
     else {
+       
         let length = table.length;
         if (length == 0) {
             if (amount > 0) {
@@ -56,6 +60,15 @@ function count() {
         let res = parseInt(table[i].getElementsByClassName("total")[0].innerText);
         result += res;
     }
+    if(result >= 1000 && result <= 2000){
+        window.alert("Превышено минимальное количество каллорий")
+    }
+    if(result >= 2000 && result <= 3000){
+        window.alert("Превышено среднее количество каллорий")
+    }
+    if(result >= 3000){
+        window.alert("Превышено максимальное количество каллорий")
+    }
     document.getElementById("totalResult").innerText = result;
 }
 
@@ -66,4 +79,11 @@ function clearTable() {
     while (rowCount > 0) {
         table.deleteRow(0);
     }    
+}
+
+function closeButton(){
+    document.getElementById("cnt").disable = true;  
+}
+function openButton(){
+    document.getElementById("cnt").disable = false;  
 }
